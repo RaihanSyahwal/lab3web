@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Lanjutan</title>
+</head>
+<body>
+    <header>
+    <h1 style="text-align: center; ">Membuat Form</h1>
+    </header>
+    <head>
+        <link rel="stylesheet" type="text/css" href="eksternal_css.css">
+    </head>
+    <form action="proses.php" method="post">
+        <fieldset>
+        <legend>Data Pelanggan</legend>
+        <p>
+        <label for="nama">Nama :</label>
+        <input type="text" id="nama" name="nama">
+        </p>
+        <p>
+        <label for="alamat">Alamat :</label>
+        <textarea id="alamat" name="alamat" cols="50" rows="10"></textarea >
+        </p>
+        <p>
+        <label>Jenis Kelamin</label>
+        <input id="jk_l" type="radio" name="kelamin" value="L" /><label
+        for="jk_l">Laki-laki</label>
+        <input id="jk_p" type="radio" name="kelamin" value="P" /><label
+        for="jk_l">perempuan</label>
+        <br><br>
+        <select name="fakultas">
+            <option value="" selected="selected">--pilih fakultas--</option>
+            <option value="Teknik Informatika">Teknik Informatika</option>
+            <option value="Teknik sipil">Teknik sipil</option>
+            <option value="Ekonomi Bisnis">Ekonomi Bisnis</option>
+            <option value="hukum">hukum</option>
+        </select>
+        </p>
+        <p><input type="submit" value="login"></p>
+        </fieldset>
+        </form>
+</body>
+</html>
